@@ -5,10 +5,10 @@
 
 int main() {
 
-    int p,r,t;
-    double simpleIntrest;
+    int p;
+    float r, t, simpleIntrest;
     
-    scanf("%d %d %d", &p, &r, &t);
+    scanf("%d %f %f", &p, &r, &t);
     
     simpleIntrest = (p * r * t)/100;
     
