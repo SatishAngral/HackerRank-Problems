@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float salary, hra, da;
+    
+    scanf("%f",&salary);
+    
+    
+    if(salary<=10000){
+        hra = (20 * salary)/100;
+        da = (30 * salary)/100;
+        salary = hra + da + salary;
+        printf("%.2f",salary);
+    } else if (salary <= 20000){
+        hra = (25* salary)/100;
+        da = (40* salary)/100;
+        salary = hra + da + salary;
+        printf("%.2f",salary);
+    } else if(salary >20000){
+        hra = (30*salary)/100;
+        da = (50*salary)/100;
+        salary = hra + da + salary;
+        printf("%.2f",salary);
+    }
+    
+    
+    
+    return 0;
+}
